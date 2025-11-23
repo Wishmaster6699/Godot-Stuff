@@ -1,0 +1,49 @@
+{
+  "tools": {
+    "grapple_hook": {
+      "max_range": 200,
+      "swing_force": 500,
+      "cooldown_s": 0.5,
+      "rope_pull_speed": 300,
+      "gravity_during_swing": 400,
+      "description": "Grapple to points and swing across gaps"
+    },
+    "laser": {
+      "damage_per_second": 15,
+      "max_duration_s": 3.0,
+      "overheat_cooldown_s": 2.0,
+      "laser_range": 300,
+      "beam_width": 4.0,
+      "description": "Continuous beam that cuts and damages"
+    },
+    "roller_blades": {
+      "speed_multiplier": 2.0,
+      "balance_difficulty": 0.3,
+      "balance_window": 0.15,
+      "stumble_duration": 1.0,
+      "balance_success_threshold": 0.7,
+      "description": "Speed boost with rhythm balance on rough terrain"
+    },
+    "surfboard": {
+      "water_speed": 150,
+      "wave_amplitude": 10,
+      "wave_frequency": 2.0,
+      "auto_activate": true,
+      "water_friction": 0.95,
+      "description": "Traverse water with wave bobbing physics"
+    }
+  },
+  "input_mappings": {
+    "tool_next": "Cycle to next tool",
+    "tool_previous": "Cycle to previous tool",
+    "tool_use": "Use current tool",
+    "jump": "Release grapple or balance input"
+  },
+  "ui_settings": {
+    "tool_icon_size": 32,
+    "tool_ui_position": "bottom_right",
+    "show_cooldown_visual": true,
+    "show_heat_meter": true,
+    "show_balance_meter": true
+  }
+}
