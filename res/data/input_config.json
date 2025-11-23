@@ -1,0 +1,120 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S02",
+  "_created": "2025-11-18",
+  "_description": "Controller Input System Configuration - Rhythm Lanes, Deadzones, Action Mappings",
+
+  "input_config": {
+    "rhythm_lanes": [
+      {
+        "lane_id": 0,
+        "button": "joy_button_0",
+        "label": "A",
+        "color": "#00FF00"
+      },
+      {
+        "lane_id": 1,
+        "button": "joy_button_1",
+        "label": "B",
+        "color": "#FF0000"
+      },
+      {
+        "lane_id": 2,
+        "button": "joy_button_2",
+        "label": "X",
+        "color": "#0000FF"
+      },
+      {
+        "lane_id": 3,
+        "button": "joy_button_3",
+        "label": "Y",
+        "color": "#FFFF00"
+      }
+    ],
+
+    "deadzones": {
+      "left_stick": 0.2,
+      "right_stick": 0.2,
+      "triggers": 0.1
+    },
+
+    "input_buffer": {
+      "max_size": 10,
+      "retention_time_ms": 200
+    },
+
+    "action_mappings": {
+      "move": {
+        "type": "analog",
+        "stick": "left"
+      },
+      "camera": {
+        "type": "analog",
+        "stick": "right"
+      },
+      "interact": {
+        "type": "button",
+        "button": "joy_button_0"
+      },
+      "dodge": {
+        "type": "button",
+        "button": "joy_button_1"
+      },
+      "block": {
+        "type": "button",
+        "button": "joy_button_2"
+      },
+      "special": {
+        "type": "button",
+        "button": "joy_button_4"
+      },
+      "pause": {
+        "type": "button",
+        "button": "joy_button_6"
+      }
+    },
+
+    "controller_layouts": {
+      "xbox": {
+        "description": "Xbox Controller Layout",
+        "a": "joy_button_0",
+        "b": "joy_button_1",
+        "x": "joy_button_2",
+        "y": "joy_button_3",
+        "lb": "joy_button_4",
+        "rb": "joy_button_5",
+        "back": "joy_button_6",
+        "start": "joy_button_7",
+        "left_stick_click": "joy_button_8",
+        "right_stick_click": "joy_button_9"
+      },
+      "playstation": {
+        "description": "PlayStation Controller Layout",
+        "cross": "joy_button_0",
+        "circle": "joy_button_1",
+        "square": "joy_button_2",
+        "triangle": "joy_button_3",
+        "l1": "joy_button_4",
+        "r1": "joy_button_5",
+        "select": "joy_button_6",
+        "start": "joy_button_7",
+        "l3": "joy_button_8",
+        "r3": "joy_button_9"
+      },
+      "nintendo": {
+        "description": "Nintendo Pro Controller Layout",
+        "b": "joy_button_0",
+        "a": "joy_button_1",
+        "y": "joy_button_2",
+        "x": "joy_button_3",
+        "l": "joy_button_4",
+        "r": "joy_button_5",
+        "minus": "joy_button_6",
+        "plus": "joy_button_7",
+        "left_stick_click": "joy_button_8",
+        "right_stick_click": "joy_button_9"
+      }
+    }
+  }
+}
