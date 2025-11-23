@@ -1,0 +1,98 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S03",
+  "_created": "2025-11-18",
+  "_description": "Player Controller Configuration - Movement, Interaction, Animations, Collision",
+
+  "player_config": {
+    "movement": {
+      "walk_speed": 200,
+      "run_speed": 400,
+      "acceleration": 800,
+      "friction": 1000,
+      "jump_force": -500,
+      "gravity": 980,
+      "max_fall_speed": 1000,
+      "coyote_time_ms": 100,
+      "jump_buffer_ms": 150
+    },
+
+    "interaction": {
+      "detection_radius": 64,
+      "auto_face_interactable": true,
+      "interaction_cooldown_ms": 200
+    },
+
+    "animations": {
+      "idle": {
+        "frames": 4,
+        "fps": 8,
+        "loop": true
+      },
+      "walk": {
+        "frames": 6,
+        "fps": 12,
+        "loop": true
+      },
+      "run": {
+        "frames": 8,
+        "fps": 16,
+        "loop": true
+      },
+      "jump": {
+        "frames": 4,
+        "fps": 10,
+        "loop": false
+      },
+      "fall": {
+        "frames": 2,
+        "fps": 8,
+        "loop": true
+      },
+      "land": {
+        "frames": 3,
+        "fps": 15,
+        "loop": false
+      }
+    },
+
+    "collision": {
+      "hitbox_size": {
+        "x": 32,
+        "y": 48
+      },
+      "hitbox_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "collision_layer": 1,
+      "collision_mask": 1
+    },
+
+    "visual": {
+      "sprite_scale": 1.0,
+      "shadow_enabled": true,
+      "shadow_offset_y": 4,
+      "debug_draw_interaction_radius": true
+    },
+
+    "stats": {
+      "max_health": 100,
+      "max_stamina": 100,
+      "stamina_regen_per_second": 20,
+      "invincibility_frames_after_hit": 30
+    },
+
+    "camera": {
+      "enable_camera": true,
+      "smoothing_enabled": true,
+      "smoothing_speed": 5.0,
+      "zoom": 2.0,
+      "limit_left": -10000,
+      "limit_top": -10000,
+      "limit_right": 10000,
+      "limit_bottom": 10000
+    }
+  }
+}
