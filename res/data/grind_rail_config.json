@@ -1,0 +1,16 @@
+{
+  "grind_rail_config": {
+    "rail_speed": 200,
+    "balance_oscillation_speed": 1.0,
+    "balance_safe_zone": 30,
+    "discord_penalty": {
+      "stat_reduction": 0.2,
+      "duration_s": 5.0
+    },
+    "jump_timing": {
+      "perfect_upbeat_window_ms": 50,
+      "jump_force_perfect": 500,
+      "jump_force_miss": 250
+    }
+  }
+}

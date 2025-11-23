@@ -1,0 +1,203 @@
+{
+  "polyrhythm_config": {
+    "patterns": {
+      "4:3": {
+        "numerator": 4,
+        "denominator": 3,
+        "description": "4 over 3 - Classic polyrhythm pattern",
+        "difficulty": "medium",
+        "use_cases": ["lights", "machinery", "platforms"]
+      },
+      "5:4": {
+        "numerator": 5,
+        "denominator": 4,
+        "description": "5 over 4 - Complex syncopation",
+        "difficulty": "hard",
+        "use_cases": ["machinery", "advanced_platforms"]
+      },
+      "7:4": {
+        "numerator": 7,
+        "denominator": 4,
+        "description": "7 over 4 - Advanced polyrhythm",
+        "difficulty": "expert",
+        "use_cases": ["machinery", "puzzle_platforms"]
+      },
+      "3:2": {
+        "numerator": 3,
+        "denominator": 2,
+        "description": "3 over 2 - Simple triplet feel",
+        "difficulty": "easy",
+        "use_cases": ["lights", "ambient_machinery"]
+      },
+      "2:3": {
+        "numerator": 2,
+        "denominator": 3,
+        "description": "2 over 3 - Inverse triplet",
+        "difficulty": "easy",
+        "use_cases": ["lights", "doors"]
+      },
+      "6:5": {
+        "numerator": 6,
+        "denominator": 5,
+        "description": "6 over 5 - Tight polyrhythm",
+        "difficulty": "expert",
+        "use_cases": ["machinery", "advanced_puzzles"]
+      },
+      "8:7": {
+        "numerator": 8,
+        "denominator": 7,
+        "description": "8 over 7 - Dense pattern",
+        "difficulty": "expert",
+        "use_cases": ["machinery", "boss_puzzles"]
+      }
+    },
+    "element_types": {
+      "light": {
+        "pulse_duration": 0.2,
+        "brightness_range": [0.5, 1.5],
+        "recommended_patterns": ["4:3", "3:2", "2:3"],
+        "color_variants": {
+          "warm": "#FFD700",
+          "cool": "#4169E1",
+          "neutral": "#FFFFFF",
+          "danger": "#FF4500",
+          "safe": "#32CD32"
+        },
+        "energy_multiplier": {
+          "base": 0.5,
+          "peak": 1.5,
+          "critical": 2.0
+        }
+      },
+      "machinery": {
+        "rotation_angle": 90,
+        "move_distance": 32,
+        "animation_duration": 0.3,
+        "recommended_patterns": ["5:4", "7:4", "6:5"],
+        "animation_types": {
+          "rotate": {
+            "angle_range": [45, 180],
+            "return_to_origin": true
+          },
+          "move_horizontal": {
+            "distance_range": [16, 64],
+            "return_to_origin": true
+          },
+          "move_vertical": {
+            "distance_range": [16, 64],
+            "return_to_origin": true
+          },
+          "scale_pulse": {
+            "scale_min": 1.0,
+            "scale_max": 1.3,
+            "return_to_origin": true
+          }
+        }
+      },
+      "platform": {
+        "rise_distance": 64,
+        "move_duration": 0.5,
+        "raised_duration": 1.0,
+        "recommended_patterns": ["4:3", "5:4"],
+        "difficulty_settings": {
+          "easy": {
+            "rise_distance": 32,
+            "move_duration": 0.7,
+            "raised_duration": 2.0,
+            "pattern": "3:2"
+          },
+          "medium": {
+            "rise_distance": 64,
+            "move_duration": 0.5,
+            "raised_duration": 1.0,
+            "pattern": "4:3"
+          },
+          "hard": {
+            "rise_distance": 96,
+            "move_duration": 0.3,
+            "raised_duration": 0.5,
+            "pattern": "5:4"
+          },
+          "expert": {
+            "rise_distance": 128,
+            "move_duration": 0.2,
+            "raised_duration": 0.3,
+            "pattern": "7:4"
+          }
+        },
+        "collision_settings": {
+          "collision_only_when_raised": true,
+          "player_damage_when_lowering": false,
+          "safe_landing_threshold": 0.8
+        }
+      },
+      "door": {
+        "open_distance": 64,
+        "open_duration": 0.4,
+        "stay_open_duration": 2.0,
+        "recommended_patterns": ["3:2", "4:3"],
+        "open_direction": "vertical"
+      },
+      "ambient_element": {
+        "animation_duration": 0.5,
+        "recommended_patterns": ["3:2", "4:3", "5:4"],
+        "animation_intensity": {
+          "subtle": 0.3,
+          "normal": 0.6,
+          "intense": 1.0
+        }
+      }
+    },
+    "audio_integration": {
+      "enable_polyrhythm_sounds": true,
+      "sound_types": {
+        "numerator_beat": {
+          "volume_db": -10,
+          "pitch_scale": 1.2,
+          "bus": "SFX"
+        },
+        "denominator_beat": {
+          "volume_db": -15,
+          "pitch_scale": 0.8,
+          "bus": "SFX"
+        },
+        "cycle_complete": {
+          "volume_db": -8,
+          "pitch_scale": 1.0,
+          "bus": "SFX"
+        }
+      }
+    },
+    "visual_feedback": {
+      "beat_indicators": {
+        "enabled": true,
+        "numerator_color": "#FFD700",
+        "denominator_color": "#4169E1",
+        "cycle_complete_color": "#32CD32"
+      },
+      "glow_effects": {
+        "enabled": true,
+        "glow_intensity": 0.5,
+        "glow_size": 1.2
+      }
+    },
+    "puzzle_integration": {
+      "enable_timing_puzzles": true,
+      "timing_tolerance_ms": 100,
+      "reward_perfect_timing": true,
+      "perfect_timing_bonus": 1.5
+    },
+    "performance_settings": {
+      "max_active_patterns": 10,
+      "max_elements_per_pattern": 20,
+      "enable_pattern_pooling": true,
+      "update_frequency_hz": 60
+    },
+    "debug_settings": {
+      "debug_enabled": false,
+      "show_beat_indicators": false,
+      "log_pattern_changes": false,
+      "visualize_timing_windows": false
+    }
+  }
+}
