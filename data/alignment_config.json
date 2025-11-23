@@ -1,0 +1,231 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S21",
+  "_created": "2025-11-18",
+  "_description": "Resonance Alignment System Configuration - Authentic vs Algorithmic duality",
+
+  "action_shifts": {
+    "help_npc_authentic": 5,
+    "help_npc_algorithmic": -5,
+    "use_algorithm_exploit": -10,
+    "use_creative_solution": 10,
+    "solve_puzzle_creatively": 3,
+    "solve_puzzle_algorithmically": -3,
+    "use_brute_force": -3,
+    "befriend_authentic_npc": 7,
+    "befriend_algorithm_npc": -7,
+    "craft_organic_item": 2,
+    "craft_digital_item": -2,
+    "cook_natural_recipe": 3,
+    "cook_synthetic_recipe": -3,
+    "collect_organic_material": 1,
+    "collect_digital_material": -1,
+    "complete_authentic_quest": 8,
+    "complete_algorithmic_quest": -8,
+    "destroy_organic_object": -5,
+    "destroy_digital_object": 5,
+    "use_special_move_authentic": 4,
+    "use_special_move_algorithmic": -4,
+    "defeat_authentic_enemy": -2,
+    "defeat_algorithmic_enemy": 2,
+    "spare_authentic_enemy": 6,
+    "spare_algorithmic_enemy": -6,
+    "dialogue_choice_authentic": 3,
+    "dialogue_choice_algorithmic": -3,
+    "dialogue_choice_creative": 5,
+    "dialogue_choice_logical": -5,
+    "choose_empathy": 4,
+    "choose_efficiency": -4,
+    "explore_natural_area": 1,
+    "explore_digital_area": -1,
+    "find_hidden_organic_secret": 5,
+    "find_hidden_digital_secret": -5
+  },
+
+  "thresholds": {
+    "strong_authentic": 50,
+    "neutral_upper": 50,
+    "neutral_lower": -50,
+    "strong_algorithmic": -50,
+    "extreme_authentic": 80,
+    "extreme_algorithmic": -80,
+    "description": "Thresholds define when alignment type changes"
+  },
+
+  "combat_modifiers": {
+    "type_advantage_bonus": 0.20,
+    "alignment_bonus_threshold": 70,
+    "max_bonus_multiplier": 1.5,
+    "neutral_balanced_bonus": 0.05,
+    "description": "Combat effectiveness modifiers based on alignment"
+  },
+
+  "visual_themes": {
+    "authentic": {
+      "primary_color": "#FF8C42",
+      "secondary_color": "#8B4513",
+      "accent_color": "#FFB347",
+      "particle_style": "organic",
+      "particle_color": "#FF8C42",
+      "ui_style": "hand_drawn",
+      "ui_border": "rough",
+      "font_style": "handwritten",
+      "description": "Warm colors, organic shapes, hand-drawn aesthetics"
+    },
+    "algorithmic": {
+      "primary_color": "#00BFFF",
+      "secondary_color": "#4169E1",
+      "accent_color": "#1E90FF",
+      "particle_style": "digital",
+      "particle_color": "#00BFFF",
+      "ui_style": "geometric",
+      "ui_border": "sharp",
+      "font_style": "monospace",
+      "description": "Cool colors, geometric shapes, digital aesthetics"
+    },
+    "neutral": {
+      "primary_color": "#FFFFFF",
+      "secondary_color": "#CCCCCC",
+      "accent_color": "#999999",
+      "particle_style": "neutral",
+      "particle_color": "#DDDDDD",
+      "ui_style": "standard",
+      "ui_border": "standard",
+      "font_style": "sans_serif",
+      "description": "Balanced, neutral aesthetics"
+    }
+  },
+
+  "loot_modifiers": {
+    "organic_items": {
+      "authentic_multiplier": 1.5,
+      "algorithmic_multiplier": 0.5,
+      "neutral_multiplier": 1.0,
+      "item_types": ["wood", "herbs", "flowers", "natural_fiber", "organic_crystal"]
+    },
+    "digital_items": {
+      "authentic_multiplier": 0.5,
+      "algorithmic_multiplier": 1.5,
+      "neutral_multiplier": 1.0,
+      "item_types": ["circuits", "code_fragments", "data_shards", "digital_key", "binary_crystal"]
+    },
+    "neutral_items": {
+      "authentic_multiplier": 1.0,
+      "algorithmic_multiplier": 1.0,
+      "neutral_multiplier": 1.2,
+      "item_types": ["coins", "generic_material", "common_potion"]
+    }
+  },
+
+  "npc_reactions": {
+    "authentic_npc": {
+      "authentic_player_min": 0.5,
+      "authentic_player_max": 1.0,
+      "algorithmic_player_min": -1.0,
+      "algorithmic_player_max": -0.5,
+      "neutral_player": 0.0,
+      "description": "NPCs aligned with authenticity prefer authentic players"
+    },
+    "algorithmic_npc": {
+      "authentic_player_min": -1.0,
+      "authentic_player_max": -0.5,
+      "algorithmic_player_min": 0.5,
+      "algorithmic_player_max": 1.0,
+      "neutral_player": 0.0,
+      "description": "NPCs aligned with algorithms prefer algorithmic players"
+    },
+    "neutral_npc": {
+      "authentic_player": 0.2,
+      "algorithmic_player": 0.2,
+      "neutral_player": 0.5,
+      "description": "Neutral NPCs prefer balanced players"
+    }
+  },
+
+  "dialogue_options": {
+    "authentic_locked_threshold": 60,
+    "algorithmic_locked_threshold": -60,
+    "description": "Alignment thresholds for unlocking special dialogue options"
+  },
+
+  "enemy_alignments": {
+    "ai_behavior_mapping": {
+      "aggressive": "algorithmic",
+      "defensive": "authentic",
+      "ranged": "algorithmic",
+      "swarm": "neutral"
+    },
+    "monster_type_mapping": {
+      "fire": "neutral",
+      "water": "authentic",
+      "grass": "authentic",
+      "electric": "algorithmic",
+      "ice": "authentic",
+      "fighting": "algorithmic",
+      "poison": "neutral",
+      "ground": "authentic",
+      "flying": "neutral",
+      "psychic": "neutral",
+      "dark": "algorithmic",
+      "digital": "algorithmic",
+      "organic": "authentic",
+      "mechanical": "algorithmic",
+      "natural": "authentic"
+    }
+  },
+
+  "progression_effects": {
+    "alignment_xp_modifiers": {
+      "authentic_creative_xp_bonus": 1.2,
+      "algorithmic_efficiency_xp_bonus": 1.2,
+      "description": "XP bonuses based on playstyle matching alignment"
+    },
+    "special_move_unlock_requirements": {
+      "authentic_special_moves": {
+        "min_alignment": 60,
+        "moves": ["creative_burst", "harmony_strike", "natural_healing"]
+      },
+      "algorithmic_special_moves": {
+        "max_alignment": -60,
+        "moves": ["logic_bomb", "system_override", "data_surge"]
+      }
+    }
+  },
+
+  "world_state_effects": {
+    "environment_changes": {
+      "authentic_areas_bonus": {
+        "min_alignment": 50,
+        "effects": ["faster_hp_regen", "better_organic_drops", "friendlier_npcs"]
+      },
+      "algorithmic_areas_bonus": {
+        "max_alignment": -50,
+        "effects": ["faster_sp_regen", "better_digital_drops", "efficient_vendors"]
+      }
+    }
+  },
+
+  "ending_requirements": {
+    "authentic_ending": {
+      "min_alignment": 70,
+      "description": "True ending path focused on human creativity"
+    },
+    "algorithmic_ending": {
+      "max_alignment": -70,
+      "description": "True ending path focused on algorithmic efficiency"
+    },
+    "neutral_ending": {
+      "min_alignment": -30,
+      "max_alignment": 30,
+      "description": "Balanced ending path embracing both approaches"
+    }
+  },
+
+  "debug_actions": {
+    "test_shift_positive": 10,
+    "test_shift_negative": -10,
+    "test_shift_large_positive": 50,
+    "test_shift_large_negative": -50
+  }
+}

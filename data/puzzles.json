@@ -1,0 +1,490 @@
+{
+  "puzzles": [
+    {
+      "id": "001_pressure_plates",
+      "type": "environmental",
+      "environmental_type": "pressure_plates",
+      "description": "Push 3 blocks onto pressure plates to unlock the door",
+      "solution": {
+        "blocks_on_plates": ["block_a", "block_b", "block_c"]
+      },
+      "reward": {
+        "xp": 50,
+        "item": "bronze_key"
+      }
+    },
+    {
+      "id": "002_lever_sequence",
+      "type": "environmental",
+      "environmental_type": "lever_sequence",
+      "description": "Activate levers in the correct order to open the gate",
+      "solution": {
+        "lever_sequence": ["lever_1", "lever_3", "lever_2", "lever_4"]
+      },
+      "reward": {
+        "xp": 75,
+        "unlock": "temple_gate"
+      }
+    },
+    {
+      "id": "003_mirror_reflection",
+      "type": "environmental",
+      "environmental_type": "mirror_reflection",
+      "description": "Redirect the light beam using mirrors to hit the receptor",
+      "solution": {
+        "mirror_angles": {
+          "mirror_1": 45.0,
+          "mirror_2": 90.0,
+          "mirror_3": 135.0
+        },
+        "target": "light_receptor_1"
+      },
+      "reward": {
+        "xp": 100,
+        "item": "ancient_lens"
+      }
+    },
+    {
+      "id": "004_switch_timing",
+      "type": "environmental",
+      "environmental_type": "switch_timing",
+      "description": "Hit all switches within 2 seconds to unlock the chest",
+      "solution": {
+        "switches": ["switch_1", "switch_2", "switch_3"],
+        "time_window_s": 2.0
+      },
+      "reward": {
+        "xp": 60,
+        "items": ["health_potion", "health_potion"]
+      }
+    },
+    {
+      "id": "005_crystal_alignment",
+      "type": "environmental",
+      "environmental_type": "pressure_plates",
+      "description": "Align the crystals on their pedestals to activate the portal",
+      "solution": {
+        "blocks_on_plates": ["crystal_red", "crystal_blue", "crystal_green"]
+      },
+      "reward": {
+        "xp": 120,
+        "unlock": "portal_room"
+      }
+    },
+    {
+      "id": "006_grapple_switch",
+      "type": "tool",
+      "tool_puzzle_type": "grapple_switch",
+      "required_tool": "grapple_hook",
+      "description": "Use grapple hook to reach the high switch and open the door",
+      "solution": {
+        "grapple_points": ["point_a", "switch_1"]
+      },
+      "reward": {
+        "xp": 80,
+        "unlock": "upper_chamber"
+      }
+    },
+    {
+      "id": "007_laser_targets",
+      "type": "tool",
+      "tool_puzzle_type": "laser_cut",
+      "required_tool": "laser",
+      "description": "Cut through the targets with the laser in the correct pattern",
+      "solution": {
+        "laser_targets": ["target_1", "target_2", "target_3", "target_4"],
+        "pattern": "diamond"
+      },
+      "reward": {
+        "xp": 90,
+        "item": "power_cell"
+      }
+    },
+    {
+      "id": "008_speed_plates",
+      "type": "tool",
+      "tool_puzzle_type": "speed_plate",
+      "required_tool": "roller_blades",
+      "description": "Activate speed-sensitive plates using roller blades",
+      "solution": {
+        "speed_plates": ["plate_1", "plate_2", "plate_3"],
+        "min_speed": 150.0
+      },
+      "reward": {
+        "xp": 85,
+        "item": "speed_boost"
+      }
+    },
+    {
+      "id": "009_wave_navigation",
+      "type": "tool",
+      "tool_puzzle_type": "wave_sequence",
+      "required_tool": "surfboard",
+      "description": "Navigate the waves and reach all checkpoints within 30 seconds",
+      "solution": {
+        "checkpoints": ["cp_1", "cp_2", "cp_3", "cp_4"],
+        "time_limit_s": 30.0
+      },
+      "reward": {
+        "xp": 110,
+        "item": "wave_charm"
+      },
+      "time_limit_s": 30.0
+    },
+    {
+      "id": "010_grapple_sequence",
+      "type": "tool",
+      "tool_puzzle_type": "grapple_switch",
+      "required_tool": "grapple_hook",
+      "description": "Grapple through multiple points to activate the mechanism",
+      "solution": {
+        "grapple_points": ["point_1", "point_2", "point_3", "lever_final"]
+      },
+      "reward": {
+        "xp": 95,
+        "unlock": "secret_passage"
+      }
+    },
+    {
+      "id": "011_bronze_door",
+      "type": "item",
+      "item_puzzle_type": "single_key",
+      "description": "Use the bronze key to unlock the door",
+      "solution": {
+        "required_items": ["bronze_key"]
+      },
+      "reward": {
+        "xp": 40,
+        "unlock": "bronze_door"
+      }
+    },
+    {
+      "id": "012_triple_lock",
+      "type": "item",
+      "item_puzzle_type": "multi_key",
+      "description": "Collect and use all three keys to open the vault",
+      "solution": {
+        "required_items": ["bronze_key", "silver_key", "gold_key"]
+      },
+      "reward": {
+        "xp": 150,
+        "items": ["rare_gem", "ancient_scroll"]
+      }
+    },
+    {
+      "id": "013_orb_collection",
+      "type": "item",
+      "item_puzzle_type": "orb_collection",
+      "description": "Collect all elemental orbs to activate the altar",
+      "solution": {
+        "required_items": ["fire_orb", "water_orb", "earth_orb", "air_orb"]
+      },
+      "reward": {
+        "xp": 200,
+        "item": "elemental_staff"
+      }
+    },
+    {
+      "id": "014_gem_sockets",
+      "type": "item",
+      "item_puzzle_type": "gem_socket",
+      "description": "Place the correct gems in each socket to unlock the treasure",
+      "solution": {
+        "socket_mapping": {
+          "socket_red": "ruby",
+          "socket_blue": "sapphire",
+          "socket_green": "emerald"
+        }
+      },
+      "reward": {
+        "xp": 130,
+        "item": "master_gem"
+      }
+    },
+    {
+      "id": "015_beat_lock",
+      "type": "rhythm",
+      "rhythm_puzzle_type": "beat_sequence",
+      "description": "Hit the beats in sequence to unlock the rhythmic lock",
+      "solution": {
+        "beat_pattern": [1, 2, 3, 4, 1, 3],
+        "timing_tolerance": "good"
+      },
+      "reward": {
+        "xp": 70,
+        "unlock": "rhythm_door"
+      }
+    },
+    {
+      "id": "016_simon_rhythm",
+      "type": "rhythm",
+      "rhythm_puzzle_type": "simon_says",
+      "description": "Watch and repeat the rhythm pattern 3 times",
+      "solution": {
+        "beat_pattern": [1, 1, 2, 3, 4],
+        "required_combo": 3,
+        "timing_tolerance": "good"
+      },
+      "reward": {
+        "xp": 100,
+        "item": "rhythm_crystal"
+      }
+    },
+    {
+      "id": "017_complex_rhythm",
+      "type": "rhythm",
+      "rhythm_puzzle_type": "multi_beat",
+      "description": "Follow the complex 4/4 rhythm pattern to open the gate",
+      "solution": {
+        "beat_pattern": [1, 2, 3, 4, 1, 3, 2, 4],
+        "time_signature": [4, 4],
+        "timing_tolerance": "perfect"
+      },
+      "reward": {
+        "xp": 140,
+        "unlock": "harmony_gate"
+      }
+    },
+    {
+      "id": "018_timing_challenge",
+      "type": "rhythm",
+      "rhythm_puzzle_type": "timing_lock",
+      "description": "Maintain perfect timing for 8 consecutive beats",
+      "solution": {
+        "hold_beats": 8,
+        "timing_tolerance": "perfect"
+      },
+      "reward": {
+        "xp": 160,
+        "item": "metronome_charm"
+      }
+    },
+    {
+      "id": "019_pendulum_bell",
+      "type": "physics",
+      "physics_puzzle_type": "momentum_swing",
+      "description": "Swing the pendulum to ring the bell with enough force",
+      "solution": {
+        "swing_objects": ["pendulum_1"],
+        "targets": ["bell_1"],
+        "required_momentum": 500.0
+      },
+      "reward": {
+        "xp": 90,
+        "unlock": "bell_tower"
+      }
+    },
+    {
+      "id": "020_weight_sequence",
+      "type": "physics",
+      "physics_puzzle_type": "gravity_drop",
+      "description": "Drop weights in the correct order to balance the scales",
+      "solution": {
+        "weight_order": ["heavy_stone", "medium_stone", "light_stone"],
+        "plates": ["plate_1", "plate_2", "plate_3"],
+        "plate_weights": {
+          "plate_1": 10.0,
+          "plate_2": 5.0,
+          "plate_3": 2.0
+        }
+      },
+      "reward": {
+        "xp": 110,
+        "item": "balance_orb"
+      }
+    },
+    {
+      "id": "021_floating_path",
+      "type": "physics",
+      "physics_puzzle_type": "buoyancy",
+      "description": "Use buoyancy to create a path across the water",
+      "solution": {
+        "float_objects": ["wooden_plank_1", "wooden_plank_2", "cork_block"],
+        "sink_objects": ["stone_weight"]
+      },
+      "reward": {
+        "xp": 95,
+        "item": "water_charm"
+      }
+    },
+    {
+      "id": "022_cannon_targets",
+      "type": "physics",
+      "physics_puzzle_type": "projectile",
+      "description": "Launch projectiles to hit all three distant targets",
+      "solution": {
+        "projectiles": ["cannonball_1", "cannonball_2", "cannonball_3"],
+        "targets": ["target_1", "target_2", "target_3"]
+      },
+      "reward": {
+        "xp": 120,
+        "unlock": "artillery_gate"
+      }
+    },
+    {
+      "id": "023_temple_challenge",
+      "type": "multi_stage",
+      "description": "Complete the three-stage temple challenge",
+      "solution": {
+        "stages": [
+          {
+            "type": "environmental",
+            "environmental_type": "pressure_plates",
+            "puzzle_id": "temple_stage_1",
+            "description": "Stage 1: Place offerings on the altars",
+            "solution": {
+              "blocks_on_plates": ["offering_a", "offering_b"]
+            }
+          },
+          {
+            "type": "rhythm",
+            "rhythm_puzzle_type": "beat_sequence",
+            "puzzle_id": "temple_stage_2",
+            "description": "Stage 2: Chant the sacred rhythm",
+            "solution": {
+              "beat_pattern": [1, 3, 2, 4],
+              "timing_tolerance": "good"
+            }
+          },
+          {
+            "type": "item",
+            "item_puzzle_type": "single_key",
+            "puzzle_id": "temple_stage_3",
+            "description": "Stage 3: Unlock the inner sanctum",
+            "solution": {
+              "required_items": ["temple_key"]
+            }
+          }
+        ],
+        "reset_all_on_fail": true
+      },
+      "reward": {
+        "xp": 300,
+        "items": ["sacred_relic", "ancient_coin", "ancient_coin"]
+      }
+    },
+    {
+      "id": "024_dungeon_gauntlet",
+      "type": "multi_stage",
+      "description": "Survive the dungeon gauntlet - four challenging stages",
+      "solution": {
+        "stages": [
+          {
+            "type": "tool",
+            "tool_puzzle_type": "grapple_switch",
+            "required_tool": "grapple_hook",
+            "puzzle_id": "gauntlet_stage_1",
+            "description": "Stage 1: Grapple across the chasm",
+            "solution": {
+              "grapple_points": ["point_start", "point_mid", "point_end"]
+            }
+          },
+          {
+            "type": "physics",
+            "physics_puzzle_type": "momentum_swing",
+            "puzzle_id": "gauntlet_stage_2",
+            "description": "Stage 2: Swing the wrecking ball",
+            "solution": {
+              "swing_objects": ["ball_1"],
+              "targets": ["wall_1"],
+              "required_momentum": 600.0
+            }
+          },
+          {
+            "type": "environmental",
+            "environmental_type": "lever_sequence",
+            "puzzle_id": "gauntlet_stage_3",
+            "description": "Stage 3: Solve the lever puzzle",
+            "solution": {
+              "lever_sequence": ["lever_a", "lever_c", "lever_b"]
+            }
+          },
+          {
+            "type": "rhythm",
+            "rhythm_puzzle_type": "timing_lock",
+            "puzzle_id": "gauntlet_stage_4",
+            "description": "Stage 4: Pass the timing trial",
+            "solution": {
+              "hold_beats": 6,
+              "timing_tolerance": "good"
+            }
+          }
+        ],
+        "reset_all_on_fail": false
+      },
+      "reward": {
+        "xp": 400,
+        "items": ["legendary_weapon_part", "master_key", "health_potion", "health_potion", "health_potion"]
+      }
+    },
+    {
+      "id": "025_vault_master",
+      "type": "multi_stage",
+      "description": "Master the vault - combines all puzzle types",
+      "solution": {
+        "stages": [
+          {
+            "type": "item",
+            "item_puzzle_type": "gem_socket",
+            "puzzle_id": "vault_stage_1",
+            "description": "Stage 1: Socket the entrance gems",
+            "solution": {
+              "socket_mapping": {
+                "socket_1": "ruby",
+                "socket_2": "emerald"
+              }
+            }
+          },
+          {
+            "type": "tool",
+            "tool_puzzle_type": "laser_cut",
+            "required_tool": "laser",
+            "puzzle_id": "vault_stage_2",
+            "description": "Stage 2: Cut the security beams",
+            "solution": {
+              "laser_targets": ["beam_1", "beam_2", "beam_3"]
+            }
+          },
+          {
+            "type": "environmental",
+            "environmental_type": "mirror_reflection",
+            "puzzle_id": "vault_stage_3",
+            "description": "Stage 3: Align the security mirrors",
+            "solution": {
+              "mirror_angles": {
+                "mirror_alpha": 90.0,
+                "mirror_beta": 45.0
+              },
+              "target": "vault_receptor"
+            }
+          },
+          {
+            "type": "physics",
+            "physics_puzzle_type": "gravity_drop",
+            "puzzle_id": "vault_stage_4",
+            "description": "Stage 4: Balance the vault mechanism",
+            "solution": {
+              "weight_order": ["weight_heavy", "weight_light"],
+              "plates": ["scale_left", "scale_right"]
+            }
+          },
+          {
+            "type": "rhythm",
+            "rhythm_puzzle_type": "beat_sequence",
+            "puzzle_id": "vault_stage_5",
+            "description": "Stage 5: Enter the final combination",
+            "solution": {
+              "beat_pattern": [1, 4, 2, 3, 1],
+              "timing_tolerance": "perfect"
+            }
+          }
+        ],
+        "reset_all_on_fail": true
+      },
+      "reward": {
+        "xp": 1000,
+        "items": ["vault_treasure", "master_artifact", "legendary_key"]
+      }
+    }
+  ]
+}
