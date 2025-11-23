@@ -1,0 +1,251 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S20",
+  "_created": "2025-11-18",
+  "_description": "Monster Evolution System configuration - level-based, tool-based, and Soul Shard evolutions",
+
+  "level_evolutions": {
+    "001_sparkle": {
+      "level": 16,
+      "evolves_into": "002_voltix",
+      "description": "Sparkle evolves into Voltix at level 16"
+    },
+    "002_voltix": {
+      "level": 36,
+      "evolves_into": "003_thunderlord",
+      "description": "Voltix evolves into Thunderlord at level 36"
+    },
+    "010_ember": {
+      "level": 18,
+      "evolves_into": "011_flare",
+      "description": "Ember evolves into Flare at level 18"
+    },
+    "011_flare": {
+      "level": 38,
+      "evolves_into": "012_inferno",
+      "description": "Flare evolves into Inferno at level 38"
+    },
+    "020_bubble": {
+      "level": 16,
+      "evolves_into": "021_aqua",
+      "description": "Bubble evolves into Aqua at level 16"
+    },
+    "021_aqua": {
+      "level": 36,
+      "evolves_into": "022_tsunami",
+      "description": "Aqua evolves into Tsunami at level 36"
+    },
+    "030_leaf": {
+      "level": 17,
+      "evolves_into": "031_vine",
+      "description": "Leaf evolves into Vine at level 17"
+    },
+    "031_vine": {
+      "level": 35,
+      "evolves_into": "032_forest_guardian",
+      "description": "Vine evolves into Forest Guardian at level 35"
+    },
+    "040_stone": {
+      "level": 20,
+      "evolves_into": "041_boulder",
+      "description": "Stone evolves into Boulder at level 20"
+    },
+    "041_boulder": {
+      "level": 40,
+      "evolves_into": "042_mountain",
+      "description": "Boulder evolves into Mountain at level 40"
+    }
+  },
+
+  "tool_evolutions": {
+    "001_sparkle": {
+      "tool": "thunder_stone",
+      "evolves_into": "004_lightning_king",
+      "description": "Sparkle + Thunder Stone = Lightning King (alternate evolution)"
+    },
+    "010_ember": {
+      "tool": "fire_stone",
+      "evolves_into": "013_flame_emperor",
+      "description": "Ember + Fire Stone = Flame Emperor (alternate evolution)"
+    },
+    "020_bubble": {
+      "tool": "water_stone",
+      "evolves_into": "023_ocean_lord",
+      "description": "Bubble + Water Stone = Ocean Lord (alternate evolution)"
+    },
+    "030_leaf": {
+      "tool": "leaf_stone",
+      "evolves_into": "033_nature_spirit",
+      "description": "Leaf + Leaf Stone = Nature Spirit (alternate evolution)"
+    },
+    "040_stone": {
+      "tool": "earth_crystal",
+      "evolves_into": "043_titan",
+      "description": "Stone + Earth Crystal = Titan (alternate evolution)"
+    },
+    "050_shadow": {
+      "tool": "dark_essence",
+      "evolves_into": "051_void_walker",
+      "description": "Shadow + Dark Essence = Void Walker"
+    },
+    "060_light": {
+      "tool": "holy_relic",
+      "evolves_into": "061_seraph",
+      "description": "Light + Holy Relic = Seraph"
+    },
+    "070_metal": {
+      "tool": "steel_core",
+      "evolves_into": "071_iron_colossus",
+      "description": "Metal + Steel Core = Iron Colossus"
+    },
+    "080_ice": {
+      "tool": "frost_shard",
+      "evolves_into": "081_glacier",
+      "description": "Ice + Frost Shard = Glacier"
+    },
+    "090_wind": {
+      "tool": "sky_feather",
+      "evolves_into": "091_tempest",
+      "description": "Wind + Sky Feather = Tempest"
+    }
+  },
+
+  "soul_shards": {
+    "boss_thunder": {
+      "grants_form": "thunder_soul_form",
+      "duration_battles": 3,
+      "stat_multiplier": 1.5,
+      "description": "Thunder Boss Soul Shard - grants powerful temporary form for 3 battles",
+      "visual_effect": "lightning_aura",
+      "abilities": ["Thunder Strike", "Chain Lightning", "Storm Call"]
+    },
+    "boss_inferno": {
+      "grants_form": "inferno_soul_form",
+      "duration_battles": 3,
+      "stat_multiplier": 1.5,
+      "description": "Inferno Boss Soul Shard - grants blazing temporary form for 3 battles",
+      "visual_effect": "flame_aura",
+      "abilities": ["Inferno Blast", "Fire Nova", "Meteor Strike"]
+    },
+    "boss_ocean": {
+      "grants_form": "ocean_soul_form",
+      "duration_battles": 3,
+      "stat_multiplier": 1.5,
+      "description": "Ocean Boss Soul Shard - grants aquatic temporary form for 3 battles",
+      "visual_effect": "water_aura",
+      "abilities": ["Tidal Wave", "Whirlpool", "Hydro Cannon"]
+    },
+    "boss_nature": {
+      "grants_form": "nature_soul_form",
+      "duration_battles": 3,
+      "stat_multiplier": 1.5,
+      "description": "Nature Boss Soul Shard - grants verdant temporary form for 3 battles",
+      "visual_effect": "nature_aura",
+      "abilities": ["Vine Whip", "Solar Beam", "Nature's Wrath"]
+    },
+    "boss_titan": {
+      "grants_form": "titan_soul_form",
+      "duration_battles": 3,
+      "stat_multiplier": 1.5,
+      "description": "Titan Boss Soul Shard - grants colossal temporary form for 3 battles",
+      "visual_effect": "earth_aura",
+      "abilities": ["Earthquake", "Rock Slide", "Titan's Fist"]
+    },
+    "boss_void": {
+      "grants_form": "void_soul_form",
+      "duration_battles": 4,
+      "stat_multiplier": 1.75,
+      "description": "Void Boss Soul Shard - grants shadowy temporary form for 4 battles (rare)",
+      "visual_effect": "void_aura",
+      "abilities": ["Shadow Strike", "Void Bomb", "Dark Matter"]
+    },
+    "boss_celestial": {
+      "grants_form": "celestial_soul_form",
+      "duration_battles": 4,
+      "stat_multiplier": 1.75,
+      "description": "Celestial Boss Soul Shard - grants divine temporary form for 4 battles (rare)",
+      "visual_effect": "holy_aura",
+      "abilities": ["Divine Ray", "Holy Judgment", "Celestial Storm"]
+    },
+    "boss_ancient": {
+      "grants_form": "ancient_soul_form",
+      "duration_battles": 5,
+      "stat_multiplier": 2.0,
+      "description": "Ancient Boss Soul Shard - grants legendary temporary form for 5 battles (legendary)",
+      "visual_effect": "ancient_aura",
+      "abilities": ["Ancient Power", "Time Warp", "Primordial Force"]
+    }
+  },
+
+  "hybrid_stat_growth": {
+    "description": "Stat growth influenced by S19 Dual XP ratios (combat vs knowledge)",
+    "combat_stat_scaling": {
+      "attack": 1.5,
+      "defense": 1.5,
+      "max_hp": 1.2,
+      "description": "Combat XP ratio increases physical stats by up to 50%"
+    },
+    "knowledge_stat_scaling": {
+      "special_attack": 1.5,
+      "special_defense": 1.5,
+      "max_mp": 1.2,
+      "description": "Knowledge XP ratio increases special/magical stats by up to 50%"
+    },
+    "balanced_bonus": {
+      "all_stats": 1.1,
+      "description": "Balanced playstyle (50/50 ratio) grants 10% bonus to all stats"
+    }
+  },
+
+  "evolution_requirements": {
+    "level_based": {
+      "description": "Check after every battle when monster gains XP",
+      "auto_trigger": false,
+      "player_choice": true,
+      "can_cancel": true
+    },
+    "tool_based": {
+      "description": "Requires both monster and tool item in inventory",
+      "consumes_tool": true,
+      "player_choice": true,
+      "can_cancel": false
+    },
+    "soul_shard": {
+      "description": "Temporary transformation that reverts after specified battles",
+      "auto_revert": true,
+      "stackable": false,
+      "can_cancel_early": true
+    }
+  },
+
+  "evolution_animations": {
+    "level_evolution": {
+      "duration_seconds": 3.0,
+      "effect": "glow_and_transform",
+      "sound": "evolution_chime"
+    },
+    "tool_evolution": {
+      "duration_seconds": 3.5,
+      "effect": "item_merge_transform",
+      "sound": "tool_fusion"
+    },
+    "soul_shard_apply": {
+      "duration_seconds": 2.0,
+      "effect": "soul_absorption",
+      "sound": "soul_shard_activate"
+    },
+    "soul_shard_revert": {
+      "duration_seconds": 1.5,
+      "effect": "aura_fade",
+      "sound": "soul_shard_expire"
+    }
+  },
+
+  "balance_notes": {
+    "level_curve": "Standard evolutions at levels 16-20 (stage 1→2), 35-40 (stage 2→3)",
+    "tool_evolutions": "Alternate evolution paths with different stat distributions",
+    "soul_shards": "Powerful temporary buffs, limited duration prevents abuse",
+    "hybrid_stats": "Rewards specialized playstyles while not punishing balanced play"
+  }
+}

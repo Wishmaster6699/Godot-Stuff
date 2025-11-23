@@ -1,0 +1,274 @@
+{
+  "special_moves": [
+    {
+      "id": "sword_spin_slash",
+      "name": "Spin Slash",
+      "weapon_type": "sword",
+      "button_combo": ["A", "B"],
+      "resource_cost": {
+        "stamina": 25,
+        "energy": 15
+      },
+      "damage_multiplier": 2.5,
+      "effects": ["knockback", "aoe_small"],
+      "animation": "spin_slash",
+      "cooldown_s": 3.0,
+      "description": "A spinning blade attack that hits all nearby enemies with moderate knockback."
+    },
+    {
+      "id": "sword_thrust",
+      "name": "Power Thrust",
+      "weapon_type": "sword",
+      "button_combo": ["A", "Down"],
+      "resource_cost": {
+        "stamina": 20,
+        "energy": 10
+      },
+      "damage_multiplier": 2.0,
+      "effects": ["piercing", "armor_break"],
+      "animation": "thrust",
+      "cooldown_s": 2.5,
+      "description": "A powerful forward thrust that ignores partial armor and pierces through defenses."
+    },
+    {
+      "id": "sword_rising_slash",
+      "name": "Rising Slash",
+      "weapon_type": "sword",
+      "button_combo": ["A", "Up"],
+      "resource_cost": {
+        "stamina": 30,
+        "energy": 20
+      },
+      "damage_multiplier": 3.0,
+      "effects": ["launch", "critical_chance"],
+      "animation": "rising_slash",
+      "cooldown_s": 4.0,
+      "description": "An upward slash that launches enemies into the air with high critical hit chance."
+    },
+    {
+      "id": "axe_overhead_smash",
+      "name": "Overhead Smash",
+      "weapon_type": "axe",
+      "button_combo": ["A", "B"],
+      "resource_cost": {
+        "stamina": 35,
+        "energy": 20
+      },
+      "damage_multiplier": 3.5,
+      "effects": ["stun", "ground_slam"],
+      "animation": "overhead_smash",
+      "cooldown_s": 4.5,
+      "description": "A devastating overhead attack that stuns enemies and creates a ground shockwave."
+    },
+    {
+      "id": "axe_whirlwind",
+      "name": "Whirlwind",
+      "weapon_type": "axe",
+      "button_combo": ["B", "B", "B"],
+      "resource_cost": {
+        "stamina": 40,
+        "energy": 25
+      },
+      "damage_multiplier": 3.0,
+      "effects": ["aoe_large", "multi_hit"],
+      "animation": "whirlwind",
+      "cooldown_s": 5.0,
+      "description": "Spin continuously with your axe extended, hitting all nearby enemies multiple times."
+    },
+    {
+      "id": "axe_cleave",
+      "name": "Cleave",
+      "weapon_type": "axe",
+      "button_combo": ["A", "Left"],
+      "resource_cost": {
+        "stamina": 25,
+        "energy": 15
+      },
+      "damage_multiplier": 2.2,
+      "effects": ["bleed", "wide_arc"],
+      "animation": "cleave",
+      "cooldown_s": 3.0,
+      "description": "A wide horizontal cleave that causes bleeding and hits multiple targets."
+    },
+    {
+      "id": "spear_impale",
+      "name": "Impale",
+      "weapon_type": "spear",
+      "button_combo": ["A", "B"],
+      "resource_cost": {
+        "stamina": 30,
+        "energy": 18
+      },
+      "damage_multiplier": 2.8,
+      "effects": ["pin", "bleed"],
+      "animation": "impale",
+      "cooldown_s": 3.5,
+      "description": "Pin an enemy in place with a powerful thrust that causes severe bleeding."
+    },
+    {
+      "id": "spear_javelin_toss",
+      "name": "Javelin Toss",
+      "weapon_type": "spear",
+      "button_combo": ["A", "Up"],
+      "resource_cost": {
+        "stamina": 20,
+        "energy": 15
+      },
+      "damage_multiplier": 2.3,
+      "effects": ["ranged", "piercing"],
+      "animation": "javelin_toss",
+      "cooldown_s": 3.0,
+      "description": "Throw your spear as a javelin, piercing through multiple enemies in a line."
+    },
+    {
+      "id": "spear_sweeping_strike",
+      "name": "Sweeping Strike",
+      "weapon_type": "spear",
+      "button_combo": ["B", "Left"],
+      "resource_cost": {
+        "stamina": 25,
+        "energy": 12
+      },
+      "damage_multiplier": 2.0,
+      "effects": ["trip", "wide_arc"],
+      "animation": "sweeping_strike",
+      "cooldown_s": 2.5,
+      "description": "A sweeping attack that trips enemies in a wide arc around you."
+    },
+    {
+      "id": "bow_multi_shot",
+      "name": "Multi Shot",
+      "weapon_type": "bow",
+      "button_combo": ["A", "B"],
+      "resource_cost": {
+        "stamina": 20,
+        "energy": 15
+      },
+      "damage_multiplier": 2.0,
+      "effects": ["multi_projectile", "spread"],
+      "animation": "multi_shot",
+      "cooldown_s": 3.0,
+      "description": "Fire multiple arrows simultaneously in a spread pattern."
+    },
+    {
+      "id": "bow_piercing_arrow",
+      "name": "Piercing Arrow",
+      "weapon_type": "bow",
+      "button_combo": ["A", "Up"],
+      "resource_cost": {
+        "stamina": 25,
+        "energy": 18
+      },
+      "damage_multiplier": 2.5,
+      "effects": ["piercing", "armor_break"],
+      "animation": "piercing_arrow",
+      "cooldown_s": 3.5,
+      "description": "A powerful arrow that pierces through armor and multiple enemies."
+    },
+    {
+      "id": "bow_rain_of_arrows",
+      "name": "Rain of Arrows",
+      "weapon_type": "bow",
+      "button_combo": ["B", "B", "A"],
+      "resource_cost": {
+        "stamina": 35,
+        "energy": 25
+      },
+      "damage_multiplier": 3.0,
+      "effects": ["aoe_large", "delayed"],
+      "animation": "rain_of_arrows",
+      "cooldown_s": 5.0,
+      "description": "Fire arrows into the sky that rain down on a large area after a brief delay."
+    },
+    {
+      "id": "staff_fireball",
+      "name": "Fireball",
+      "weapon_type": "staff",
+      "button_combo": ["A", "Up"],
+      "resource_cost": {
+        "stamina": 15,
+        "energy": 20
+      },
+      "damage_multiplier": 2.5,
+      "effects": ["fire", "explosion"],
+      "animation": "fireball",
+      "cooldown_s": 3.0,
+      "description": "Hurl a blazing fireball that explodes on impact, dealing fire damage."
+    },
+    {
+      "id": "staff_ice_lance",
+      "name": "Ice Lance",
+      "weapon_type": "staff",
+      "button_combo": ["B", "Down"],
+      "resource_cost": {
+        "stamina": 15,
+        "energy": 18
+      },
+      "damage_multiplier": 2.2,
+      "effects": ["ice", "slow", "piercing"],
+      "animation": "ice_lance",
+      "cooldown_s": 2.5,
+      "description": "Conjure a spear of ice that pierces enemies and slows their movement."
+    },
+    {
+      "id": "staff_lightning_strike",
+      "name": "Lightning Strike",
+      "weapon_type": "staff",
+      "button_combo": ["A", "B"],
+      "resource_cost": {
+        "stamina": 20,
+        "energy": 25
+      },
+      "damage_multiplier": 3.0,
+      "effects": ["lightning", "chain", "stun"],
+      "animation": "lightning_strike",
+      "cooldown_s": 4.0,
+      "description": "Call down a lightning bolt that chains to nearby enemies and stuns them."
+    },
+    {
+      "id": "staff_arcane_blast",
+      "name": "Arcane Blast",
+      "weapon_type": "staff",
+      "button_combo": ["B", "B", "B"],
+      "resource_cost": {
+        "stamina": 25,
+        "energy": 30
+      },
+      "damage_multiplier": 3.5,
+      "effects": ["arcane", "knockback", "aoe_medium"],
+      "animation": "arcane_blast",
+      "cooldown_s": 5.0,
+      "description": "Release a massive blast of arcane energy that knocks back all nearby enemies."
+    },
+    {
+      "id": "universal_combo_finisher",
+      "name": "Combo Finisher",
+      "weapon_type": "all",
+      "button_combo": ["A", "A", "B"],
+      "resource_cost": {
+        "stamina": 30,
+        "energy": 20
+      },
+      "damage_multiplier": 2.8,
+      "effects": ["bonus_on_chain"],
+      "animation": "combo_finisher",
+      "cooldown_s": 4.0,
+      "description": "A powerful finisher move available to all weapon types. Deals more damage after dodge cancels."
+    },
+    {
+      "id": "universal_perfect_counter",
+      "name": "Perfect Counter",
+      "weapon_type": "all",
+      "button_combo": ["Down", "A"],
+      "resource_cost": {
+        "stamina": 20,
+        "energy": 15
+      },
+      "damage_multiplier": 3.0,
+      "effects": ["counter", "critical"],
+      "animation": "perfect_counter",
+      "cooldown_s": 3.0,
+      "description": "Block and immediately counter attack. Requires precise timing but deals massive damage."
+    }
+  ]
+}
