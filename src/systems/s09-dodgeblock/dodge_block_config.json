@@ -1,0 +1,29 @@
+{
+  "dodge_block_config": {
+    "dodge": {
+      "cooldown_s": 0.5,
+      "iframe_duration_perfect": 0.3,
+      "iframe_duration_good": 0.2,
+      "iframe_duration_miss": 0.1,
+      "dodge_distance": 64,
+      "dodge_speed": 400
+    },
+    "block": {
+      "cooldown_s": 1.0,
+      "stamina_cost": 10,
+      "damage_reduction_perfect": 0.85,
+      "damage_reduction_good": 0.60,
+      "damage_reduction_miss": 0.30,
+      "block_stun_duration": 0.2
+    },
+    "stamina": {
+      "max_stamina": 100,
+      "regen_rate": 10,
+      "regen_delay_after_block": 2.0
+    },
+    "timing_windows": {
+      "perfect": 50,
+      "good": 100
+    }
+  }
+}
