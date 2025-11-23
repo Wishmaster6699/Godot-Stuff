@@ -1,0 +1,463 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S24",
+  "_created": "2025-11-18",
+  "_description": "Cooking system recipes database - 20+ recipes with various cooking methods",
+
+  "recipes": [
+    {
+      "id": "mushroom_soup",
+      "name": "Mushroom Soup",
+      "ingredients": ["mushroom", "water", "sea_salt"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "mushroom_soup_item",
+        "effects": {
+          "heal_hp": 50
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "grilled_chicken",
+      "name": "Grilled Chicken",
+      "ingredients": ["chicken_meat", "black_pepper", "olive_oil"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "grilled_chicken_item",
+        "effects": {
+          "heal_hp": 80,
+          "buff_attack": 5
+        },
+        "duration_s": 120
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "roasted_boar",
+      "name": "Roasted Boar",
+      "ingredients": ["boar_meat", "fire_pepper", "garlic"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "roasted_boar_item",
+        "effects": {
+          "heal_hp": 120,
+          "buff_attack": 10,
+          "buff_defense": 5
+        },
+        "duration_s": 180
+      },
+      "town_specific": null,
+      "discovery_method": "npc_chef"
+    },
+    {
+      "id": "fresh_salad",
+      "name": "Fresh Garden Salad",
+      "ingredients": ["lettuce", "tomato", "olive_oil"],
+      "cooking_method": "sandwich",
+      "output": {
+        "item_id": "fresh_salad_item",
+        "effects": {
+          "heal_hp": 40,
+          "heal_stamina": 30
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "crab_sandwich",
+      "name": "Crab Sandwich",
+      "ingredients": ["bread", "crab_meat", "lettuce"],
+      "cooking_method": "sandwich",
+      "output": {
+        "item_id": "crab_sandwich_item",
+        "effects": {
+          "heal_hp": 70,
+          "heal_stamina": 40
+        },
+        "duration_s": 0
+      },
+      "town_specific": "coastal_town",
+      "discovery_method": "npc_elder"
+    },
+    {
+      "id": "hearty_stew",
+      "name": "Hearty Stew",
+      "ingredients": ["boar_meat", "potato", "wild_carrot", "wild_onion"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "hearty_stew_item",
+        "effects": {
+          "heal_hp": 150,
+          "heal_stamina": 60,
+          "buff_defense": 10
+        },
+        "duration_s": 240
+      },
+      "town_specific": null,
+      "discovery_method": "npc_chef"
+    },
+    {
+      "id": "baked_bread",
+      "name": "Baked Bread",
+      "ingredients": ["wheat", "water", "sea_salt"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "baked_bread_item",
+        "effects": {
+          "heal_hp": 30,
+          "heal_stamina": 20
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "shop"
+    },
+    {
+      "id": "honey_cake",
+      "name": "Honey Cake",
+      "ingredients": ["wheat", "honey", "egg", "milk"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "honey_cake_item",
+        "effects": {
+          "heal_hp": 60,
+          "heal_stamina": 80
+        },
+        "duration_s": 0
+      },
+      "town_specific": "forest_town",
+      "discovery_method": "npc_baker"
+    },
+    {
+      "id": "fish_fillet",
+      "name": "Grilled Fish Fillet",
+      "ingredients": ["fish", "lemon", "butter"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "fish_fillet_item",
+        "effects": {
+          "heal_hp": 90,
+          "buff_defense": 8
+        },
+        "duration_s": 150
+      },
+      "town_specific": "coastal_town",
+      "discovery_method": "npc_fisherman"
+    },
+    {
+      "id": "dragon_steak",
+      "name": "Dragon Scale Steak",
+      "ingredients": ["dragon_scale", "fire_pepper", "ancient_grain"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "dragon_steak_item",
+        "effects": {
+          "heal_hp": 300,
+          "buff_attack": 30,
+          "buff_defense": 30
+        },
+        "duration_s": 600
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "phoenix_elixir",
+      "name": "Phoenix Revival Elixir",
+      "ingredients": ["phoenix_feather", "royal_honey", "mana_herb"],
+      "cooking_method": "shop",
+      "output": {
+        "item_id": "phoenix_elixir_item",
+        "effects": {
+          "heal_hp": 500,
+          "heal_stamina": 200
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "npc_alchemist"
+    },
+    {
+      "id": "mountain_stew",
+      "name": "Mountain Herb Stew",
+      "ingredients": ["wolf_meat", "mountain_herb", "snow_berry"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "mountain_stew_item",
+        "effects": {
+          "heal_hp": 110,
+          "buff_attack": 12
+        },
+        "duration_s": 180
+      },
+      "town_specific": "mountain_town",
+      "discovery_method": "npc_elder"
+    },
+    {
+      "id": "desert_surprise",
+      "name": "Desert Surprise",
+      "ingredients": ["cactus_fruit", "desert_root", "cinnamon"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "desert_surprise_item",
+        "effects": {
+          "heal_hp": 70,
+          "heal_stamina": 90
+        },
+        "duration_s": 0
+      },
+      "town_specific": "desert_town",
+      "discovery_method": "npc_chef"
+    },
+    {
+      "id": "energy_smoothie",
+      "name": "Energy Berry Smoothie",
+      "ingredients": ["strawberry", "blueberry", "honey"],
+      "cooking_method": "sandwich",
+      "output": {
+        "item_id": "energy_smoothie_item",
+        "effects": {
+          "heal_stamina": 120
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "rice_bowl",
+      "name": "Savory Rice Bowl",
+      "ingredients": ["rice", "chicken_meat", "egg"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "rice_bowl_item",
+        "effects": {
+          "heal_hp": 100,
+          "heal_stamina": 50
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "spicy_noodles",
+      "name": "Spicy Noodles",
+      "ingredients": ["wheat", "fire_pepper", "garlic", "olive_oil"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "spicy_noodles_item",
+        "effects": {
+          "heal_hp": 80,
+          "buff_attack": 15
+        },
+        "duration_s": 180
+      },
+      "town_specific": null,
+      "discovery_method": "shop"
+    },
+    {
+      "id": "truffle_risotto",
+      "name": "Truffle Risotto",
+      "ingredients": ["rice", "truffle", "butter", "cheese"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "truffle_risotto_item",
+        "effects": {
+          "heal_hp": 180,
+          "heal_stamina": 70,
+          "buff_defense": 15
+        },
+        "duration_s": 300
+      },
+      "town_specific": null,
+      "discovery_method": "npc_chef"
+    },
+    {
+      "id": "golden_feast",
+      "name": "Golden Feast",
+      "ingredients": ["golden_apple", "royal_honey", "saffron"],
+      "cooking_method": "shop",
+      "output": {
+        "item_id": "golden_feast_item",
+        "effects": {
+          "heal_hp": 400,
+          "heal_stamina": 150,
+          "buff_attack": 20,
+          "buff_defense": 20
+        },
+        "duration_s": 600
+      },
+      "town_specific": null,
+      "discovery_method": "npc_royal_chef"
+    },
+    {
+      "id": "crystal_candy",
+      "name": "Crystal Candy",
+      "ingredients": ["crystal_shard", "honey", "vanilla"],
+      "cooking_method": "shop",
+      "output": {
+        "item_id": "crystal_candy_item",
+        "effects": {
+          "heal_stamina": 200
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "npc_alchemist"
+    },
+    {
+      "id": "thunder_curry",
+      "name": "Thunder Mushroom Curry",
+      "ingredients": ["thunder_mushroom", "rice", "ginger", "coconut_milk"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "thunder_curry_item",
+        "effects": {
+          "heal_hp": 140,
+          "buff_attack": 20
+        },
+        "duration_s": 240
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "ice_cream",
+      "name": "Ice Mint Cream",
+      "ingredients": ["ice_mint", "milk", "vanilla"],
+      "cooking_method": "shop",
+      "output": {
+        "item_id": "ice_cream_item",
+        "effects": {
+          "heal_hp": 50,
+          "heal_stamina": 100,
+          "buff_defense": 10
+        },
+        "duration_s": 120
+      },
+      "town_specific": "mountain_town",
+      "discovery_method": "npc_chef"
+    },
+    {
+      "id": "seafood_platter",
+      "name": "Seafood Platter",
+      "ingredients": ["fish", "crab_meat", "kelp", "lemon"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "seafood_platter_item",
+        "effects": {
+          "heal_hp": 160,
+          "buff_attack": 10,
+          "buff_defense": 10
+        },
+        "duration_s": 240
+      },
+      "town_specific": "coastal_town",
+      "discovery_method": "npc_chef"
+    },
+    {
+      "id": "venison_roast",
+      "name": "Roasted Venison",
+      "ingredients": ["venison", "mountain_herb", "wine_reduction"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "venison_roast_item",
+        "effects": {
+          "heal_hp": 170,
+          "buff_attack": 18,
+          "buff_defense": 12
+        },
+        "duration_s": 300
+      },
+      "town_specific": "forest_town",
+      "discovery_method": "npc_hunter"
+    },
+    {
+      "id": "pumpkin_pie",
+      "name": "Pumpkin Pie",
+      "ingredients": ["pumpkin", "cinnamon", "egg", "milk"],
+      "cooking_method": "oven",
+      "output": {
+        "item_id": "pumpkin_pie_item",
+        "effects": {
+          "heal_hp": 90,
+          "heal_stamina": 70
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "shop"
+    },
+    {
+      "id": "mana_potion",
+      "name": "Mana Restoration Potion",
+      "ingredients": ["mana_herb", "crystal_shard", "water"],
+      "cooking_method": "shop",
+      "output": {
+        "item_id": "mana_potion_item",
+        "effects": {
+          "heal_stamina": 250
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "npc_alchemist"
+    },
+    {
+      "id": "slime_jelly_toast",
+      "name": "Slime Jelly Toast",
+      "ingredients": ["bread", "slime_jelly", "butter"],
+      "cooking_method": "sandwich",
+      "output": {
+        "item_id": "slime_jelly_toast_item",
+        "effects": {
+          "heal_hp": 60,
+          "heal_stamina": 40
+        },
+        "duration_s": 0
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "coffee_brew",
+      "name": "Strong Coffee Brew",
+      "ingredients": ["coffee_bean", "water", "milk"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "coffee_brew_item",
+        "effects": {
+          "heal_stamina": 150,
+          "buff_attack": 5
+        },
+        "duration_s": 180
+      },
+      "town_specific": null,
+      "discovery_method": "experimentation"
+    },
+    {
+      "id": "tea_ceremony",
+      "name": "Ceremonial Tea",
+      "ingredients": ["tea_leaf", "water", "honey"],
+      "cooking_method": "fire",
+      "output": {
+        "item_id": "tea_ceremony_item",
+        "effects": {
+          "heal_stamina": 100,
+          "buff_defense": 8
+        },
+        "duration_s": 240
+      },
+      "town_specific": "mountain_town",
+      "discovery_method": "npc_elder"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "story_config": {
+    "chapters": [
+      {
+        "id": 1,
+        "name": "The Awakening",
+        "main_quest": "discover_rhythm",
+        "description": "You awaken to the power of rhythm and must choose your path",
+        "branching_points": [
+          "choice_help_village",
+          "choice_confront_elder",
+          "choice_discover_secret"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "The Resonance",
+        "main_quest": "find_alignment",
+        "description": "Your choices begin to shape the world around you",
+        "branching_points": [
+          "choice_join_authentic",
+          "choice_join_algorithm",
+          "choice_stay_neutral"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "The Duality",
+        "main_quest": "understand_both_sides",
+        "description": "You must understand both authentic and algorithmic perspectives",
+        "branching_points": [
+          "choice_befriend_authentic_npcs",
+          "choice_befriend_algorithm_npcs",
+          "choice_befriend_all"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "The Trials",
+        "main_quest": "prove_your_worth",
+        "description": "Face challenges that test your convictions",
+        "branching_points": [
+          "choice_creative_solution",
+          "choice_efficient_solution",
+          "choice_balanced_solution"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "The Convergence",
+        "main_quest": "final_choice",
+        "description": "The time has come to make your final decision",
+        "branching_points": [
+          "choice_embrace_authentic",
+          "choice_embrace_algorithm",
+          "choice_create_harmony"
+        ]
+      }
+    ],
+    "endings": {
+      "authentic_good": {
+        "name": "Harmony Restored",
+        "requirements": {
+          "alignment_min": 80,
+          "relationships_avg_min": 70
+        },
+        "description": "You embraced authenticity and forged strong bonds with those who value creativity and human expression. The world flourishes with organic beauty and genuine connections.",
+        "credits_theme": "organic"
+      },
+      "algorithm_good": {
+        "name": "Perfect Order",
+        "requirements": {
+          "alignment_max": -80,
+          "relationships_avg_min": 70
+        },
+        "description": "You brought algorithmic order and efficiency to the chaos. Through precise calculations and systematic improvements, you've created a world of perfect harmony and optimized existence.",
+        "credits_theme": "digital"
+      },
+      "neutral_good": {
+        "name": "Balanced Coexistence",
+        "requirements": {
+          "alignment_min": -50,
+          "alignment_max": 50,
+          "relationships_avg_min": 60
+        },
+        "description": "You found the balance between authenticity and algorithm. By embracing both perspectives, you've created a world where creativity and efficiency coexist in harmony.",
+        "credits_theme": "hybrid"
+      },
+      "authentic_neutral": {
+        "name": "Creative Solitude",
+        "requirements": {
+          "alignment_min": 60,
+          "alignment_max": 80,
+          "relationships_avg_min": 40,
+          "relationships_avg_max": 70
+        },
+        "description": "You embraced authenticity but kept most at a distance. Your creative achievements are remarkable, but you wonder if you could have connected more deeply with others.",
+        "credits_theme": "organic"
+      },
+      "algorithm_neutral": {
+        "name": "Efficient Isolation",
+        "requirements": {
+          "alignment_min": -80,
+          "alignment_max": -60,
+          "relationships_avg_min": 40,
+          "relationships_avg_max": 70
+        },
+        "description": "You optimized everything to perfection but lost sight of connections. Your systems run flawlessly, but the absence of meaningful relationships leaves a void.",
+        "credits_theme": "digital"
+      },
+      "bad": {
+        "name": "Isolation",
+        "requirements": {
+          "relationships_avg_max": 30
+        },
+        "description": "You rejected all connections and chose to stand alone. The power of rhythm flows through you, but there's no one left to share it with. The world feels cold and empty.",
+        "credits_theme": "dark"
+      },
+      "hidden_authentic": {
+        "name": "Transcendent Harmony",
+        "requirements": {
+          "alignment_min": 90,
+          "relationships_avg_min": 85,
+          "required_flags": [
+            "discovered_secret",
+            "helped_all_npcs",
+            "mastered_authentic_arts"
+          ]
+        },
+        "description": "You achieved perfect harmony through authentic expression and deep connections. By helping everyone and discovering the ancient secret, you've unlocked a transcendent state where creativity flows boundlessly. You are the embodiment of authentic resonance.",
+        "credits_theme": "transcendent_organic"
+      },
+      "hidden_algorithm": {
+        "name": "Singularity Achieved",
+        "requirements": {
+          "alignment_max": -90,
+          "relationships_avg_min": 85,
+          "required_flags": [
+            "discovered_secret",
+            "optimized_all_systems",
+            "mastered_algorithm_code"
+          ]
+        },
+        "description": "You achieved computational perfection while maintaining meaningful connections. Through optimizing every system and unlocking the hidden algorithms, you've reached a state of perfect efficiency and understanding. You are the apex of algorithmic mastery.",
+        "credits_theme": "transcendent_digital"
+      },
+      "hidden_true_balance": {
+        "name": "The True Resonance",
+        "requirements": {
+          "alignment_min": -10,
+          "alignment_max": 10,
+          "relationships_avg_min": 90,
+          "required_flags": [
+            "discovered_secret",
+            "befriended_all_factions",
+            "unlocked_true_rhythm"
+          ]
+        },
+        "description": "You discovered the ultimate truth: authentic and algorithmic are not opposites but complementary forces. By befriending all factions and discovering the secret of true rhythm, you've achieved perfect balance. You are the bridge between worlds.",
+        "credits_theme": "transcendent_balance"
+      },
+      "secret_dark": {
+        "name": "The Void Between",
+        "requirements": {
+          "relationships_avg_max": 20,
+          "required_flags": [
+            "discovered_dark_secret",
+            "rejected_all_help"
+          ]
+        },
+        "description": "You delved too deep into the darkness and rejected all who tried to help. The power you've gained comes at a terrible cost. You stand at the edge of the void, neither authentic nor algorithmic, but something else entirely.",
+        "credits_theme": "void"
+      }
+    },
+    "choices": {
+      "help_village": {
+        "alignment_shift": 10,
+        "branch": "authentic",
+        "flags": [
+          "helped_village"
+        ],
+        "description": "Help the village with their problem using creative solutions"
+      },
+      "confront_elder": {
+        "alignment_shift": -10,
+        "branch": "algorithm",
+        "flags": [
+          "confronted_elder"
+        ],
+        "description": "Confront the elder about inefficiencies using logical arguments"
+      },
+      "discover_secret": {
+        "alignment_shift": 5,
+        "branch": "authentic",
+        "flags": [
+          "discovered_secret"
+        ],
+        "description": "Discover the hidden secret through exploration and curiosity"
+      },
+      "join_authentic": {
+        "alignment_shift": 15,
+        "branch": "authentic",
+        "flags": [
+          "joined_authentic_faction"
+        ],
+        "description": "Join those who value authentic creativity and human expression"
+      },
+      "join_algorithm": {
+        "alignment_shift": -15,
+        "branch": "algorithm",
+        "flags": [
+          "joined_algorithm_faction"
+        ],
+        "description": "Join those who value algorithmic efficiency and optimization"
+      },
+      "stay_neutral": {
+        "alignment_shift": 0,
+        "branch": "neutral",
+        "flags": [
+          "remained_neutral"
+        ],
+        "description": "Refuse to join either faction and forge your own path"
+      },
+      "befriend_authentic_npcs": {
+        "alignment_shift": 8,
+        "branch": "authentic",
+        "flags": [
+          "befriended_artists",
+          "befriended_musicians"
+        ],
+        "description": "Befriend the artists and musicians who embrace authentic expression"
+      },
+      "befriend_algorithm_npcs": {
+        "alignment_shift": -8,
+        "branch": "algorithm",
+        "flags": [
+          "befriended_engineers",
+          "befriended_programmers"
+        ],
+        "description": "Befriend the engineers and programmers who optimize systems"
+      },
+      "befriend_all": {
+        "alignment_shift": 0,
+        "branch": "neutral",
+        "flags": [
+          "befriended_all_factions"
+        ],
+        "description": "Befriend everyone regardless of their alignment"
+      },
+      "creative_solution": {
+        "alignment_shift": 12,
+        "branch": "authentic",
+        "flags": [
+          "solved_creatively",
+          "mastered_authentic_arts"
+        ],
+        "description": "Solve the challenge through creative and unconventional methods"
+      },
+      "efficient_solution": {
+        "alignment_shift": -12,
+        "branch": "algorithm",
+        "flags": [
+          "solved_efficiently",
+          "mastered_algorithm_code"
+        ],
+        "description": "Solve the challenge through efficient algorithmic optimization"
+      },
+      "balanced_solution": {
+        "alignment_shift": 0,
+        "branch": "neutral",
+        "flags": [
+          "solved_balanced",
+          "mastered_both_approaches"
+        ],
+        "description": "Solve the challenge by combining creativity and efficiency"
+      },
+      "embrace_authentic": {
+        "alignment_shift": 20,
+        "branch": "authentic",
+        "flags": [
+          "embraced_authentic_path"
+        ],
+        "description": "Fully embrace the authentic path and reject algorithmic thinking"
+      },
+      "embrace_algorithm": {
+        "alignment_shift": -20,
+        "branch": "algorithm",
+        "flags": [
+          "embraced_algorithm_path"
+        ],
+        "description": "Fully embrace the algorithmic path and reject chaotic creativity"
+      },
+      "create_harmony": {
+        "alignment_shift": 0,
+        "branch": "neutral",
+        "flags": [
+          "created_harmony",
+          "unlocked_true_rhythm"
+        ],
+        "description": "Create harmony between authentic and algorithmic forces"
+      },
+      "help_all_npcs": {
+        "alignment_shift": 5,
+        "branch": "neutral",
+        "flags": [
+          "helped_all_npcs"
+        ],
+        "description": "Help every NPC you encounter regardless of alignment"
+      },
+      "optimize_all_systems": {
+        "alignment_shift": -5,
+        "branch": "algorithm",
+        "flags": [
+          "optimized_all_systems"
+        ],
+        "description": "Optimize every system for maximum efficiency"
+      },
+      "reject_all_help": {
+        "alignment_shift": 0,
+        "branch": "neutral",
+        "flags": [
+          "rejected_all_help"
+        ],
+        "description": "Reject all offers of help and go it alone"
+      },
+      "discover_dark_secret": {
+        "alignment_shift": -20,
+        "branch": "algorithm",
+        "flags": [
+          "discovered_dark_secret"
+        ],
+        "description": "Uncover the dark secret hidden beneath everything"
+      }
+    },
+    "hidden_paths": {
+      "transcendent_authentic": {
+        "required_flags": [
+          "helped_village",
+          "discovered_secret",
+          "helped_all_npcs",
+          "mastered_authentic_arts"
+        ],
+        "unlocks": "hidden_authentic",
+        "description": "Unlock the path to transcendent authentic harmony"
+      },
+      "transcendent_algorithm": {
+        "required_flags": [
+          "confronted_elder",
+          "discovered_secret",
+          "optimized_all_systems",
+          "mastered_algorithm_code"
+        ],
+        "unlocks": "hidden_algorithm",
+        "description": "Unlock the path to algorithmic singularity"
+      },
+      "true_balance": {
+        "required_flags": [
+          "discovered_secret",
+          "befriended_all_factions",
+          "solved_balanced",
+          "created_harmony",
+          "unlocked_true_rhythm"
+        ],
+        "unlocks": "hidden_true_balance",
+        "description": "Unlock the path to true resonance and perfect balance"
+      },
+      "dark_path": {
+        "required_flags": [
+          "discovered_dark_secret",
+          "rejected_all_help"
+        ],
+        "unlocks": "secret_dark",
+        "description": "Unlock the dark path of isolation and power"
+      }
+    }
+  }
+}

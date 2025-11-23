@@ -1,0 +1,133 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S12",
+  "_created": "2025-11-18",
+  "_description": "Type effectiveness matrix for monster combat. Based on Pokemon-style type mechanics.",
+
+  "types": [
+    "normal",
+    "fire",
+    "water",
+    "grass",
+    "electric",
+    "ice",
+    "fighting",
+    "poison",
+    "ground",
+    "flying",
+    "psychic",
+    "dark"
+  ],
+
+  "type_chart": {
+    "normal": {
+      "super_effective": [],
+      "not_very_effective": [],
+      "immune": ["ghost"]
+    },
+
+    "fire": {
+      "super_effective": ["grass", "ice"],
+      "not_very_effective": ["fire", "water", "ground"],
+      "immune": []
+    },
+
+    "water": {
+      "super_effective": ["fire", "ground"],
+      "not_very_effective": ["water", "grass", "electric"],
+      "immune": []
+    },
+
+    "grass": {
+      "super_effective": ["water", "ground"],
+      "not_very_effective": ["fire", "grass", "poison", "flying", "ice"],
+      "immune": []
+    },
+
+    "electric": {
+      "super_effective": ["water", "flying"],
+      "not_very_effective": ["electric", "grass"],
+      "immune": ["ground"]
+    },
+
+    "ice": {
+      "super_effective": ["grass", "ground", "flying"],
+      "not_very_effective": ["fire", "ice", "fighting"],
+      "immune": []
+    },
+
+    "fighting": {
+      "super_effective": ["normal", "ice", "dark"],
+      "not_very_effective": ["poison", "flying", "psychic"],
+      "immune": []
+    },
+
+    "poison": {
+      "super_effective": ["grass"],
+      "not_very_effective": ["poison", "ground", "psychic"],
+      "immune": []
+    },
+
+    "ground": {
+      "super_effective": ["fire", "electric", "poison"],
+      "not_very_effective": ["grass", "ice", "water"],
+      "immune": ["flying"]
+    },
+
+    "flying": {
+      "super_effective": ["grass", "fighting"],
+      "not_very_effective": ["electric", "ice"],
+      "immune": []
+    },
+
+    "psychic": {
+      "super_effective": ["fighting", "poison"],
+      "not_very_effective": ["psychic", "dark"],
+      "immune": []
+    },
+
+    "dark": {
+      "super_effective": ["psychic"],
+      "not_very_effective": ["fighting", "dark"],
+      "immune": []
+    },
+
+    "ghost": {
+      "super_effective": ["psychic"],
+      "not_very_effective": ["dark"],
+      "immune": ["normal", "fighting"]
+    }
+  },
+
+  "type_descriptions": {
+    "normal": "Balanced type with no particular strengths or weaknesses. Reliable and versatile.",
+    "fire": "Hot and fierce. Burns grass and ice, but struggles against water and ground.",
+    "water": "Flowing and adaptable. Douses fire and erodes ground, but weak to electricity.",
+    "grass": "Natural and resilient. Absorbs water and breaks ground, but vulnerable to many types.",
+    "electric": "Shocking and fast. Electrifies water and flying foes, but grounded by earth.",
+    "ice": "Cold and brittle. Freezes grass, ground, and flying types, but melts easily.",
+    "fighting": "Physical and strong. Overpowers normal and dark types, but struggles with agile foes.",
+    "poison": "Toxic and debilitating. Poisons grass types, but less effective against other toxins.",
+    "ground": "Solid and heavy. Buries fire, electric, and poison, but washed away by water.",
+    "flying": "Airborne and swift. Swoops down on grass and fighting types, but vulnerable to electricity.",
+    "psychic": "Mental and mysterious. Dominates fighting and poison types, but countered by darkness.",
+    "dark": "Shadowy and cunning. Preys on psychic types, but vulnerable to fighting spirit."
+  },
+
+  "dual_type_rules": {
+    "description": "When a monster has two types, effectiveness multipliers are combined:",
+    "examples": {
+      "fire_vs_grass_flying": "2.0 × 2.0 = 4.0x damage (extremely effective)",
+      "ground_vs_electric_flying": "2.0 × 0.0 = 0.0x damage (immunity overrides)",
+      "water_vs_fire_grass": "2.0 × 0.5 = 1.0x damage (neutral result)"
+    }
+  },
+
+  "balance_notes": {
+    "strong_offensive_types": ["ice", "ground", "fire"],
+    "strong_defensive_types": ["normal", "water", "poison"],
+    "versatile_types": ["water", "electric", "dark"],
+    "specialist_types": ["grass", "psychic", "fighting"]
+  }
+}
