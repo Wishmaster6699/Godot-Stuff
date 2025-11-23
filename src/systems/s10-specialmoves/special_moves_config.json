@@ -1,0 +1,11 @@
+{
+  "special_moves_config": {
+    "combo_window_ms": 200.0,
+    "max_buffer_check": 10,
+    "upbeat_window_ms": 100.0,
+    "max_stamina": 100,
+    "max_energy": 50,
+    "energy_regen_rate": 5.0,
+    "stamina_regen_rate": 10.0
+  }
+}

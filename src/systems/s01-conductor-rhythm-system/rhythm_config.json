@@ -1,0 +1,65 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S01",
+  "_created": "2025-11-18",
+  "_description": "Rhythm system configuration for timing windows, BPM presets, and visual feedback",
+
+  "rhythm_config": {
+    "default_bpm": 120,
+    "time_signature": [4, 4],
+
+    "timing_windows": {
+      "perfect": {
+        "offset_ms": 50,
+        "score_multiplier": 2.0,
+        "color": "#00FF00",
+        "description": "±50ms from beat"
+      },
+      "good": {
+        "offset_ms": 100,
+        "score_multiplier": 1.5,
+        "color": "#FFFF00",
+        "description": "±100ms from beat"
+      },
+      "miss": {
+        "offset_ms": 150,
+        "score_multiplier": 0.0,
+        "color": "#FF0000",
+        "description": ">150ms from beat"
+      }
+    },
+
+    "bpm_presets": {
+      "slow": 60,
+      "normal": 120,
+      "fast": 180,
+      "boss_battle": 140,
+      "exploration": 90
+    },
+
+    "latency_compensation_ms": 0,
+
+    "visual_feedback": {
+      "beat_flash_duration": 0.1,
+      "downbeat_color": "#00FF00",
+      "upbeat_color": "#FFFF00",
+      "normal_beat_color": "#FFFFFF",
+      "measure_complete_color": "#00FFFF"
+    },
+
+    "audio_settings": {
+      "enable_metronome": false,
+      "metronome_volume_db": -10.0,
+      "downbeat_pitch": 1.2,
+      "upbeat_pitch": 1.0
+    },
+
+    "debug_settings": {
+      "show_debug_overlay": false,
+      "log_beat_emissions": false,
+      "show_timing_windows": true,
+      "beat_indicator_size": 50
+    }
+  }
+}
