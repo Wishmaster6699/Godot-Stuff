@@ -1,0 +1,227 @@
+{
+  "_schema_version": "1.0",
+  "_godot_version": "4.5",
+  "_system_id": "S26",
+  "_created": "2025-11-18",
+  "_description": "Rhythm patterns for mini-games: story moments, boss phases, training",
+
+  "patterns": {
+    "simple_4beat": {
+      "name": "Simple 4-Beat",
+      "description": "Four quarter notes in 4/4 time",
+      "beats": [1, 2, 3, 4],
+      "time_signature": [4, 4],
+      "difficulty": "normal",
+      "category": "story",
+      "pattern_type": "simple"
+    },
+
+    "downbeat_only": {
+      "name": "Downbeat Focus",
+      "description": "Hit only on downbeats (beat 1)",
+      "beats": [1],
+      "time_signature": [4, 4],
+      "difficulty": "normal",
+      "category": "training",
+      "pattern_type": "simple"
+    },
+
+    "backbeat": {
+      "name": "Backbeat",
+      "description": "Beats 2 and 4 (classic backbeat)",
+      "beats": [2, 4],
+      "time_signature": [4, 4],
+      "difficulty": "normal",
+      "category": "story",
+      "pattern_type": "simple"
+    },
+
+    "waltz_3_4": {
+      "name": "Waltz Time",
+      "description": "Three beats in 3/4 time",
+      "beats": [1, 2, 3],
+      "time_signature": [3, 4],
+      "difficulty": "normal",
+      "category": "story",
+      "pattern_type": "waltz"
+    },
+
+    "syncopation_basic": {
+      "name": "Basic Syncopation",
+      "description": "Off-beat pattern with syncopation",
+      "beats": [1, 2.5, 3.5, 4],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "story",
+      "pattern_type": "syncopation"
+    },
+
+    "eighth_notes": {
+      "name": "Eighth Note Run",
+      "description": "Eight eighth notes",
+      "beats": [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "training",
+      "pattern_type": "fast"
+    },
+
+    "polyrhythm_3_4": {
+      "name": "Polyrhythm 3:4",
+      "description": "Three notes over four beats (from S18 Polyrhythm system)",
+      "beats": [1, 2.33, 3.66],
+      "time_signature": [4, 4],
+      "difficulty": "expert",
+      "category": "training",
+      "pattern_type": "polyrhythm"
+    },
+
+    "polyrhythm_5_4": {
+      "name": "Polyrhythm 5:4",
+      "description": "Five notes over four beats (advanced polyrhythm)",
+      "beats": [1, 1.8, 2.6, 3.4, 4.2],
+      "time_signature": [4, 4],
+      "difficulty": "expert",
+      "category": "training",
+      "pattern_type": "polyrhythm"
+    },
+
+    "boss_telegraph": {
+      "name": "Boss Telegraph Pattern",
+      "description": "Pattern for boss rhythm phase",
+      "beats": [1, 2, 3, 4, 1, 2, 3, 4],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "boss",
+      "pattern_type": "boss_challenge",
+      "special_properties": {
+        "stun_duration_beats": 8,
+        "enrage_damage_multiplier": 1.5
+      }
+    },
+
+    "boss_frenzy": {
+      "name": "Boss Frenzy",
+      "description": "Fast-paced boss rhythm phase",
+      "beats": [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 1, 1.5, 2, 2.5],
+      "time_signature": [4, 4],
+      "difficulty": "expert",
+      "category": "boss",
+      "pattern_type": "boss_challenge",
+      "special_properties": {
+        "stun_duration_beats": 12,
+        "enrage_damage_multiplier": 2.0
+      }
+    },
+
+    "story_intro": {
+      "name": "Story Introduction",
+      "description": "Easy intro pattern for story moments",
+      "beats": [1, 3],
+      "time_signature": [4, 4],
+      "difficulty": "normal",
+      "category": "story",
+      "pattern_type": "simple",
+      "story_context": "Introduction to rhythm mechanics"
+    },
+
+    "story_climax": {
+      "name": "Story Climax",
+      "description": "Intense pattern for story climax moments",
+      "beats": [1, 1.5, 2, 3, 3.5, 4],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "story",
+      "pattern_type": "mixed",
+      "story_context": "Dramatic story moment requiring focus"
+    },
+
+    "training_combo": {
+      "name": "Combo Training",
+      "description": "Pattern designed for combo practice",
+      "beats": [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4],
+      "time_signature": [4, 4],
+      "difficulty": "normal",
+      "category": "training",
+      "pattern_type": "simple",
+      "training_goal": "Maintain combo for 12 consecutive hits"
+    },
+
+    "training_perfect": {
+      "name": "Perfect Timing Training",
+      "description": "Spaced notes for practicing perfect timing",
+      "beats": [1, 3, 1, 3, 1, 3],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "training",
+      "pattern_type": "timing_practice",
+      "training_goal": "Hit 6 perfect timing windows in a row"
+    },
+
+    "mixed_rhythm": {
+      "name": "Mixed Rhythm Challenge",
+      "description": "Complex pattern mixing different rhythmic elements",
+      "beats": [1, 1.5, 2.5, 3, 4],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "story",
+      "pattern_type": "mixed"
+    },
+
+    "triplet_feel": {
+      "name": "Triplet Feel",
+      "description": "Triplet subdivision pattern",
+      "beats": [1, 1.66, 2.33, 3, 3.66, 4.33],
+      "time_signature": [4, 4],
+      "difficulty": "hard",
+      "category": "training",
+      "pattern_type": "triplet"
+    },
+
+    "final_boss": {
+      "name": "Final Boss Ultimate",
+      "description": "Ultimate rhythm challenge for final boss",
+      "beats": [
+        1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.33, 3.66, 4,
+        1, 1.5, 2, 2.5, 3, 3.5, 4
+      ],
+      "time_signature": [4, 4],
+      "difficulty": "expert",
+      "category": "boss",
+      "pattern_type": "boss_ultimate",
+      "special_properties": {
+        "stun_duration_beats": 16,
+        "enrage_damage_multiplier": 3.0,
+        "perfect_required": 15,
+        "requires_combo": 10
+      }
+    }
+  },
+
+  "pattern_categories": {
+    "story": "Rhythm moments during story/cutscenes",
+    "boss": "Rhythm phases during boss battles",
+    "training": "Practice mode patterns for skill building"
+  },
+
+  "pattern_types": {
+    "simple": "Basic quarter note patterns",
+    "waltz": "3/4 time signature patterns",
+    "syncopation": "Off-beat, syncopated rhythms",
+    "polyrhythm": "Complex polyrhythmic patterns (from S18)",
+    "fast": "High-speed eighth note patterns",
+    "boss_challenge": "Boss-specific rhythm challenges",
+    "timing_practice": "Patterns for timing accuracy training",
+    "mixed": "Mixed rhythmic elements"
+  },
+
+  "metadata": {
+    "total_patterns": 17,
+    "normal_difficulty": 6,
+    "hard_difficulty": 7,
+    "expert_difficulty": 4,
+    "story_patterns": 7,
+    "boss_patterns": 3,
+    "training_patterns": 7
+  }
+}
